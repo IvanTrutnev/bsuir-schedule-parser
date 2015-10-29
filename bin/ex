@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+Dir['./lib/*.rb'].each { |f| require(f)}
+number = ARGV[0]
+Fetcher.new(number).fetch
